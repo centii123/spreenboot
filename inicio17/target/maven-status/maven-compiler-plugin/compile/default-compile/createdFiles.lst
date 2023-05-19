@@ -1,0 +1,6 @@
+com\example\inicio17\Entity\Persona.class
+com\example\inicio17\Controller\ControladorPersona.class
+com\example\inicio17\Services\PersonaServiceIMP\PersonaIM.class
+com\example\inicio17\Services\PersonaService.class
+com\example\inicio17\Repository\PersonaRepo.class
+com\example\inicio17\Inicio17Application.class
