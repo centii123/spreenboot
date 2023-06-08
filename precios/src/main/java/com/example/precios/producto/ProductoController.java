@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/")
+@RequestMapping("/productos")
 @CrossOrigin({"*"}) //asegurar el acceso para que no todos entren se pone las ips que queremos q ingresen
 public class ProductoController {
     
@@ -27,13 +27,13 @@ public class ProductoController {
         return "hola mundo";
     }
 
-    @GetMapping("/")
+    @GetMapping("")
     public ArrayList<Producto> findAll(){
         return productoService.findall();
     }
 
 
-    @PostMapping("/ll")
+    @PostMapping("")
     public Producto save(@RequestBody Producto entity){
         return productoService.save(entity);
     }
